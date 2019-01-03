@@ -6,6 +6,11 @@
   crossorigin="anonymous"></script>
   <title>Tofyland</title>
   <style>
+  .main {
+  font-size: 105%;
+  color: beige;
+  background: RosyBrown;
+  }
     body {
       text-align: center;
       background: beige;
@@ -23,10 +28,8 @@
       border-radius:120px;
       text-align: center;
     
-    
-   
-    
   
+    
   </style>
 </head>
 <body>
@@ -36,15 +39,8 @@
   
 
 <script>
-
 $("h1").click(function(){
-  $("p").css("color", "beige");
-});
-
-$("h1").click(function(){
-  $("body").css("background", "RosyBrown");
-});
-  
-  
+    $("p, body").toggleClass("main");
+  });  
 </script>
 </body>
