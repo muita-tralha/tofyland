@@ -7,7 +7,6 @@
   <title>Tofyland</title>
   <style>
   .main {
-  font-size: 105%;
   color: beige;
   background: RosyBrown;
   }
@@ -21,9 +20,9 @@
     p {
       font-size: 22px;
     }
-    input {
+    button {
       border: 4px dashed darksalmon;
-      padding: 20px  0 ;
+      padding: 20px;
       font-size: 22px;
       border-radius:120px;
       text-align: center;
@@ -35,11 +34,11 @@
 <body>
   <h1>Tofy.Land</h1>
   <p>Oi, eu sou a Daphne e tenho um gato chamado Tofu (codinome Tofy). Meu projeto de 2019 é aprender a codar e ter um site muito doido.</p>
-  <input type="text" placeholder="Clica no título!">
+  <button type="button">Clica aqui!</button>
   
 
 <script>
-$("h1").click(function(){
+$("button").click(function(){
     $("p, body").toggleClass("main");
   });  
 </script>
