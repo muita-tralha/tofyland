@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <head>
+<script src="/assets/jquery.js"></script>
   <title>Tofyland</title>
   <style>
     body {
@@ -15,7 +16,10 @@
     input {
       border: 2px dashed darksalmon;
       padding: 30px;
-      font-size: 30px;
+      font-size: 15px;
+      border-radius:120px;
+      text-align: center;
+    
     }
     input:focus{
       outline:none;
@@ -24,11 +28,21 @@
       background: pink;
       color: white;
     }
+    
+  
   </style>
 </head>
 <body>
   <h1>Tofy.Land</h1>
-  <p>Oi, eu sou a Daphne  e tenho um gato chamado Tofu (codinome Tofy). Meu projeto de 2019 é aprender a codar e ter um site muito doido.</p>
-  <input type="email" placeholder="caixa inutil">
+  <p>Oi, eu sou a Daphne e tenho um gato chamado Tofu (codinome Tofy). Meu projeto de 2019 é aprender a codar e ter um site muito doido.</p>
+  <input type="email" placeholder="clica no titulo!">
   <input type="submit">
+
+<script>
+
+$("h1").click(function(){
+  $("p").css("color", "beige");
+});
+  
+</script>
 </body>
