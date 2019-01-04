@@ -5,7 +5,29 @@
   integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
   crossorigin="anonymous"></script>
   <title>Tofyland</title>
+  
   <style>
+  
+ 	div.caiu {
+  width: 20px;
+  top:0px;
+  height: 20px;
+  opacity: 0;
+  background-color: purple;
+  animation-name: caiu;
+  animation-duration: 10s;
+  position: absolute;
+}
+
+@-webkit-keyframes caiu {
+	0% {background-color: purple; opacity: 0; top: 0%;}
+    1% {background-color: purple; opacity: .5; top: 1px;}
+    100% {background-color: yellow; opacity: 1; top: 100%;}
+  }
+  
+  
+  
+  
   .main {
   color: beige;
   background: RosyBrown;
@@ -25,21 +47,29 @@
       padding: 20px;
       font-size: 22px;
       border-radius:120px;
-      text-align: center;
-    
+      text-align: center;}    
+  
   
     
   </style>
 </head>
 <body>
+
   <h1>Tofy.Land</h1>
   <p>Oi, eu sou a Daphne e tenho um gato chamado Tofu (codinome Tofy). Meu projeto de 2019 é aprender a codar e ter um site muito doido.</p>
   <button type="button">Clica aqui!</button>
   
+<div class="container"> </div>
+  
 
 <script>
 $("button").click(function(){
-    $("p, body").toggleClass("main");
+    $("body").toggleClass("main");
+    $('.container').toggleClass('caiu');
   });  
+</script>
+
+<script>
+  
 </script>
 </body>
