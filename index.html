@@ -7,27 +7,31 @@
   <title>Tofyland</title>
   
   <style>
-  
- 	div.caiu {
-  width: 20px;
-  top:0px;
-  height: 20px;
+
+.caiu {  
+  animation-name: caiu; 
+}
+
+.gatinho {
+  max-width: 10%;
+  max-height: 10;
+  margin: 0 0 0 15px;
+  top: 0px;
+  left: 0;
   opacity: 0;
-  background-color: purple;
-  animation-name: caiu;
   animation-duration: 10s;
-  position: absolute;
+  position: absolute
+}
+div.gatao {
+content:url(http://cdn5.dibujos.net/dibujos/pintar/maneki-neko-de-la-abundancia_2.png);	
 }
 
 @-webkit-keyframes caiu {
-	0% {background-color: purple; opacity: 0; top: 0%;}
-    1% {background-color: purple; opacity: .5; top: 1px;}
-    100% {background-color: yellow; opacity: 1; top: 100%;}
+	0% {opacity: 0; top: 0%;}
+    1% {opacity: .5; top: 1px;}
+    100% {opacity: 1; top: 100%;}
   }
-  
-  
-  
-  
+   
   .main {
   color: beige;
   background: RosyBrown;
@@ -60,13 +64,18 @@
   <p>Oi, eu sou a Daphne e tenho um gato chamado Tofu (codinome Tofy). Meu projeto de 2019 é aprender a codar e ter um site muito doido.</p>
   <button type="button">Clica aqui!</button>
   
-<div class="container"> </div>
+<img class="gatinho" src="http://cdn5.dibujos.net/dibujos/pintar/maneki-neko-de-la-abundancia_2.png" max-width="60" height="47"> 
+<div class="gatao"></div>
   
 
 <script>
 $("button").click(function(){
     $("body").toggleClass("main");
-    $('.container').toggleClass('caiu');
+    $('.gatinho').toggleClass('caiu');
+    $('.gatao').toggle();
+    
+    
+   
   });  
 </script>
 
