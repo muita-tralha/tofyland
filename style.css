@@ -1,0 +1,307 @@
+<style>
+body {
+background: #FFFFFF;  
+}
+p {
+position: absolute;
+width: 499px;
+height: 94px;
+left: 328px;
+top: 402px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+font-size: 24px;
+
+color: #888888;  
+}
+h2 {
+position: absolute;
+width: 499px;
+height: 197px;
+left: 328px;
+top: 308px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+font-size: 36px;
+
+color: #606060;
+}
+
+h1{
+position: absolute;
+width: 286px;
+height: 63px;
+left: 328px;
+top: 245px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+font-size: 48px;
+color: #606060;  
+}
+.black {
+position: absolute;
+width: 288px;
+height: 23px;
+left: -1px;
+top: 0px;
+background: rgba(0, 0, 0, 0.97);
+}
+.white{
+position: absolute;
+width: 288px;
+height: 25px;
+left: -1px;
+top: 23px;
+background: #FFFFFF;
+}
+.azul{
+position: absolute;
+width: 288px;
+height: 163px;
+left: -1px;
+top: 48px;
+background: #C8F5FC;  
+}
+.roxo{
+  position: absolute;
+width: 114px;
+height: 110px;
+left: -1px;
+top: 211px;
+background: rgba(255, 47, 247, 0.32);  
+}
+.amarelo{
+  position: absolute;
+width: 174px;
+height: 110px;
+left: 113px;
+top: 211px;
+background: #FFDE6A;
+}
+.listraroxa1{
+  position: absolute;
+width: 288px;
+height: 20px;
+left: -1px;
+top: 321px;
+background: rgba(204, 182, 180, 0.97);
+}
+.listrarosa1{
+position: absolute;
+width: 288px;
+height: 20px;
+left: -1px;
+top: 341px;
+background: #FAC9BA;
+}
+.listraroxa2 {
+background: rgba(204, 182, 180, 0.97);
+position: absolute;
+width: 288px;
+height: 21px;
+left: -1px;
+top: 361px;  
+}
+.listrarosa2 {
+background: #FAC9BA;
+position: absolute;
+width: 288px;
+height: 20px;
+left: -1px;
+top: 382px;  
+}
+.listraroxa3 {
+background: rgba(204, 182, 180, 0.97);
+position: absolute;
+width: 288px;
+height: 20px;
+left: -1px;
+top: 402px;  
+}
+.listrarosa3 {
+background: #FAC9BA;
+position: absolute;
+width: 288px;
+height: 20px;
+left: -1px;
+top: 422px;
+}
+.verde1 {
+position: absolute;
+width: 144px;
+height: 17px;
+left: -1px;
+top: 441px;
+background: #D6FFFA;
+}
+.lar1{
+ position: absolute;
+width: 144px;
+height: 19px;
+left: -1px;
+top: 458px; 
+ background: #FF8957; 
+}
+.verde2{
+position: absolute;
+width: 144px;
+height: 19px;
+left: -1px;
+top: 477px;
+background: #D6FFFA;
+}
+.lar2{
+ position: absolute;
+width: 144px;
+height: 18px;
+left: -1px;
+top: 496px; 
+background: #FF8957; 
+}
+.verde3{
+position: absolute;  
+width: 144px;
+height: 17px;
+left: -1px;
+top: 514px;
+background: #D6FFFA;
+}
+.lar3{
+position: absolute;
+width: 144px;
+height: 18px;
+left: -1px;
+top: 531px;
+background: #FF8957;
+}
+.rox1{
+position: absolute;
+width: 144px;
+height: 17px;
+left: 143px;
+top: 441px;
+background: #F8BBEE;  
+}
+.ros1{
+position: absolute;
+width: 144px;
+height: 19px;
+left: 143px;
+top: 458px;  
+background: #DFDFDF;   
+}
+.rox2{
+position: absolute;
+width: 144px;
+height: 19px;
+left: 143px;
+top: 477px;
+background: #F8BBEE;  
+}
+.ros2{
+position: absolute;
+width: 144px;
+height: 18px;
+left: 143px;
+top: 496px;
+background: #DFDFDF;  
+}
+.rox3{
+position: absolute;
+width: 144px;
+height: 17px;
+left: 143px;
+top: 514px;
+background: #F8BBEE;  
+}
+.ros3{
+position: absolute;
+width: 144px;
+height: 19px;
+left: 143px;
+top: 530px;
+background: #DFDFDF;  
+}
+.bla1{
+position: absolute;
+width: 288px;
+height: 18px;
+left: -1px;
+top: 572px;
+background: #000000;  
+}
+.whi1 {
+position: absolute;
+width: 288px;
+height: 18px;
+left: -1px;
+top: 590px;
+background: #FFFFFF;  
+}
+.bla2{
+position: absolute;
+width: 288px;
+height: 18px;
+left: -1px;
+top: 608px;
+background: #000000;  
+}
+.whi2 {
+position: absolute;
+width: 288px;
+height: 18px;
+left: -1px;
+top: 626px;
+background: #FFFFFF;  
+}
+.bla3{
+position: absolute;
+width: 288px;
+height: 18px;
+left: -1px;
+top: 644px;
+background: #000000;  
+}
+.whi3 {
+position: absolute;
+width: 288px;
+height: 18px;
+left: -1px;
+top: 662px;
+background: #FFFFFF;  
+}
+.bla4{
+position: absolute;
+width: 288px;
+height: 18px;
+left: -1px;
+top: 680px;
+background: #000000;  
+}
+.whi4 {
+position: absolute;
+width: 288px;
+height: 18px;
+left: -1px;
+top: 698px;
+background: #FFFFFF;  
+}
+.tofu {
+position: absolute;
+width: 101px;
+height: 110px;
+left: 1106px;
+top: 35px;
+background: url(http://i68.tinypic.com/2q8aamc.jpg) no-repeat; 
+background-size: contain;
+}
+</style>
