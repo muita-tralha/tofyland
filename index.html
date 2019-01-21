@@ -1,90 +1,56 @@
 <!DOCTYPE html>
+<html>
 <head>
-<script
-  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
-  crossorigin="anonymous"></script>
-  <title>Tofyland</title>
-  
-  <style>
-
-.caiu {  
-  animation-name: caiu; 
-}
-
-.gatinho {
-  max-width: 10%;
-  max-height: 10;
-  margin: 0 0 0 15px;
-  top: 0px;
-  left: 0;
-  opacity: 0;
-  animation-duration: 10s;
-  position: absolute;
-}
-div.gatao {
-content:url(http://cdn5.dibujos.net/dibujos/pintar/maneki-neko-de-la-abundancia_2.png);
-opacity:.9;
-}
-.gatao{
-position: fixed;
-bottom: -180px;
-	  }
-
-@-webkit-keyframes caiu {
-	0% {opacity: 0; top: 0%;}
-    1% {opacity: .5; top: 1px;}
-    100% {opacity: 1; top: 100%;}
-  }
-   
-  .main {
-  color: beige;
-  background: RosyBrown;
-  }
-    body {
-      text-align: center;
-      background: beige;
-      color: purple;
-      font-family: helvetica;
-      padding-top:200px;
-	overflow: hidden;
-    }
-    p {
-      font-size: 22px;
-    }
-    button {
-      border: 4px dashed darksalmon;
-      padding: 20px;
-      font-size: 22px;
-      border-radius:120px;
-      text-align: center;}    
-  
-  
-    
-  </style>
+<title>Tofy.Land</title>  
+<meta charset="utf-8"/>  
+<link rel="stylesheet" href="style.css">  
 </head>
 <body>
-
-  <h1>Tofy.Land</h1>
-  <p>Oi, eu sou a Daphne e tenho um gato chamado Tofu (codinome Tofy). Meu projeto de 2019 é aprender a codar e ter um site muito doido.</p>
-  <button type="button">Clica aqui!</button>
   
-<img class="gatinho" src="http://cdn5.dibujos.net/dibujos/pintar/maneki-neko-de-la-abundancia_2.png" max-width="60" height="47"> 
-<div class="gatao" position:static bottom:120% ></div>
+  <div class = "left">
+    <div class = "black"></div>
+    <div class = "white"></div>
+    <div class = "azul"></div>
+    <div class = "roxo"></div>
+    <div class = "amarelo"></div>
+    <div class = "listraroxa1"></div>
+    <div class = "listrarosa1"></div>
+    <div class = "listraroxa2"></div>
+    <div class = "listrarosa2"></div>
+    <div class = "listraroxa3"></div>
+    <div class = "listrarosa3"></div>
+    <div class = "verde1"></div>
+    <div class = "lar1"></div>
+    <div class = "verde2"></div>
+    <div class = "lar2"></div>
+    <div class = "verde3"></div>
+    <div class = "lar3"></div>
+    <div class = "rox1"></div>
+    <div class = "ros1"></div>
+    <div class = "rox2"></div>
+    <div class = "ros2"></div>
+    <div class = "rox3"></div>
+    <div class = "ros3"></div>
+    <div class = "bla1"></div>
+    <div class = "whi1"></div>
+    <div class = "bla2"></div>
+    <div class = "whi2"></div>
+    <div class = "bla3"></div>
+    <div class = "whi3"></div>
+    <div class = "bla4"></div>
+    <div class = "whi4"></div>
+  </div>
   
-
-<script>
-$("button").click(function(){
-    $("body").toggleClass("main");
-    $('.gatinho').toggleClass('caiu');
-    $('.gatao').toggle();
+  <div class = "right">
     
+    <h1> Oi,</h1>
+    <h2>Eu sou a Daphne e esse ao lado é o Tofu.</h2>
+    <p>Em 2019 pretendo aprender a codar. Criar vários projetos aleatórios nesse site foi a forma de me manter entretida durante essa empreitada. 
+      <br>Espero realmente ter várias páginas aqui até o final do ano, e não só ficar mudando o layout mensalmente.
+    </p>
     
-   
-  });  
-</script>
-
-<script>
+    <div class ="tofu"></div>
+  </div>
   
-</script>
 </body>
+</html>
