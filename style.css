@@ -57,7 +57,7 @@ flex-basis: 80%;
 }
 
 .box {
-height: 28px;
+height: 3.1vh;
 flex:0 0 auto;
 }
 
@@ -122,19 +122,19 @@ background: #F8BBEE;
 } 
 
 .h0 {
-height: 210px;
+height: 23vh;
 }
 
 .h1 {
-height: 150px;
+height: 16.1vh;
 }
 
 .h2 {
-height: 21px;
+height: 2.4vh;
 }
 
 .h3 {
-height: 18px;
+height: 2vh;
 }
 
 .tofu {
@@ -161,4 +161,4 @@ div.yellow {
         background-color: #FFF;
         opacity: 0; 
         filter: alpha(opacity=1); 
-    }
+}
