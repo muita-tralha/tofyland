@@ -1,307 +1,148 @@
-<style>
 body {
-background: #FFFFFF;  
+  background: #fff;
+  margin: 0;
+  padding: 0;
 }
+
+
+.intro {
+  /* altura 100 viewport height unit
+   * vh = viewport height. tipo 10vh é 10% do tamanho da tela, 90vh 90%, etc.
+   * Não é a mesma coisa que '%' sempre. Se você tem um pai de 90px de altura, o filho de 100% vai ter 90px e não a altura da tela
+   * to esquecendo que o escrevo não precisa ser enviado e isso deixa tudo mt dramático e não editável
+   * você está falando com seu computador beep boop
+   */
+  height: 100vh;
+  /* diz prx meninx .intro ser ~flexivel~. ou melhor, ter filhos flexiveis */
+  display: flex;
+  /* "koe filhos, vcs vao ser centralizados" */
+  justify-content: center;
+  /* um pai ~flex~ por padrao trabalha com o eixo horizontal, coisas uma do lado, nao em baixo */
+  /* então é só dizer a direção que você quer: row/column */
+  flex-direction: column;
+}
+
 p {
-position: absolute;
-width: 499px;
-height: 94px;
-left: 328px;
-top: 402px;
-
-font-family: Roboto;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-font-size: 24px;
-
-color: #888888;  
+ max-width: 499px;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 24px;
+  color: #888;
+  margin: 0 0 0 25px;
 }
+
 h2 {
-position: absolute;
-width: 499px;
-height: 197px;
-left: 328px;
-top: 308px;
-
-font-family: Roboto;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-font-size: 36px;
-
-color: #606060;
+  width: 499px;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 36px;
+  color: #606060;
+  margin: 0 0 0 25px;
 }
 
-h1{
-position: absolute;
-width: 286px;
-height: 63px;
-left: 328px;
-top: 245px;
+h1 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 48px;
+  color: #606060;
+  margin: 0 0 0 25px;
+}
 
-font-family: Roboto;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-font-size: 48px;
-color: #606060;  
+.left {
+flex-basis: 20%;
 }
-.black {
-position: absolute;
-width: 288px;
-height: 23px;
-left: -1px;
-top: 0px;
-background: rgba(0, 0, 0, 0.97);
+
+.right {
+flex-basis: 80%;
 }
-.white{
-position: absolute;
-width: 288px;
-height: 25px;
-left: -1px;
-top: 23px;
+
+.box {
+height: 28px;
+flex:0 0 auto;
+}
+
+.two-cols {
+display: flex;
+}
+
+.w-one-third {
+flex-basis: calc(100% / 3);
+}
+
+.w-two-third {
+flex-basis: calc(100% / 3 * 2);
+}
+
+.half {
+flex-basis: 50%;
+}
+
+.bg-black{
+background: #000000;
+}
+
+.bg-white {
 background: #FFFFFF;
 }
-.azul{
-position: absolute;
-width: 288px;
-height: 163px;
-left: -1px;
-top: 48px;
-background: #C8F5FC;  
+
+.bg-blue {
+background:#C8F5FC ;
 }
-.roxo{
-  position: absolute;
-width: 114px;
-height: 110px;
-left: -1px;
-top: 211px;
+
+.purple {
 background: rgba(255, 47, 247, 0.32);  
 }
-.amarelo{
-  position: absolute;
-width: 174px;
-height: 110px;
-left: 113px;
-top: 211px;
+
+.yellow {
 background: #FFDE6A;
 }
-.listraroxa1{
-  position: absolute;
-width: 288px;
-height: 20px;
-left: -1px;
-top: 321px;
+
+.bg-roxo {
 background: rgba(204, 182, 180, 0.97);
 }
-.listrarosa1{
-position: absolute;
-width: 288px;
-height: 20px;
-left: -1px;
-top: 341px;
+
+.bg-rosa {
 background: #FAC9BA;
 }
-.listraroxa2 {
-background: rgba(204, 182, 180, 0.97);
-position: absolute;
-width: 288px;
-height: 21px;
-left: -1px;
-top: 361px;  
-}
-.listrarosa2 {
-background: #FAC9BA;
-position: absolute;
-width: 288px;
-height: 20px;
-left: -1px;
-top: 382px;  
-}
-.listraroxa3 {
-background: rgba(204, 182, 180, 0.97);
-position: absolute;
-width: 288px;
-height: 20px;
-left: -1px;
-top: 402px;  
-}
-.listrarosa3 {
-background: #FAC9BA;
-position: absolute;
-width: 288px;
-height: 20px;
-left: -1px;
-top: 422px;
-}
-.verde1 {
-position: absolute;
-width: 144px;
-height: 17px;
-left: -1px;
-top: 441px;
+
+.bg-verde {
 background: #D6FFFA;
 }
-.lar1{
- position: absolute;
-width: 144px;
-height: 19px;
-left: -1px;
-top: 458px; 
- background: #FF8957; 
-}
-.verde2{
-position: absolute;
-width: 144px;
-height: 19px;
-left: -1px;
-top: 477px;
-background: #D6FFFA;
-}
-.lar2{
- position: absolute;
-width: 144px;
-height: 18px;
-left: -1px;
-top: 496px; 
+
+.bg-la {
 background: #FF8957; 
 }
-.verde3{
-position: absolute;  
-width: 144px;
-height: 17px;
-left: -1px;
-top: 514px;
-background: #D6FFFA;
+
+.bg-gray {
+background: #DFDFDF; 
 }
-.lar3{
-position: absolute;
-width: 144px;
-height: 18px;
-left: -1px;
-top: 531px;
-background: #FF8957;
-}
-.rox1{
-position: absolute;
-width: 144px;
-height: 17px;
-left: 143px;
-top: 441px;
+
+.bg-pink {
 background: #F8BBEE;  
+} 
+
+.h0 {
+height: 210px;
 }
-.ros1{
-position: absolute;
-width: 144px;
-height: 19px;
-left: 143px;
-top: 458px;  
-background: #DFDFDF;   
+
+.h1 {
+height: 150px;
 }
-.rox2{
-position: absolute;
-width: 144px;
-height: 19px;
-left: 143px;
-top: 477px;
-background: #F8BBEE;  
+
+.h2 {
+height: 21px;
 }
-.ros2{
-position: absolute;
-width: 144px;
+
+.h3 {
 height: 18px;
-left: 143px;
-top: 496px;
-background: #DFDFDF;  
 }
-.rox3{
-position: absolute;
-width: 144px;
-height: 17px;
-left: 143px;
-top: 514px;
-background: #F8BBEE;  
-}
-.ros3{
-position: absolute;
-width: 144px;
-height: 19px;
-left: 143px;
-top: 530px;
-background: #DFDFDF;  
-}
-.bla1{
-position: absolute;
-width: 288px;
-height: 18px;
-left: -1px;
-top: 572px;
-background: #000000;  
-}
-.whi1 {
-position: absolute;
-width: 288px;
-height: 18px;
-left: -1px;
-top: 590px;
-background: #FFFFFF;  
-}
-.bla2{
-position: absolute;
-width: 288px;
-height: 18px;
-left: -1px;
-top: 608px;
-background: #000000;  
-}
-.whi2 {
-position: absolute;
-width: 288px;
-height: 18px;
-left: -1px;
-top: 626px;
-background: #FFFFFF;  
-}
-.bla3{
-position: absolute;
-width: 288px;
-height: 18px;
-left: -1px;
-top: 644px;
-background: #000000;  
-}
-.whi3 {
-position: absolute;
-width: 288px;
-height: 18px;
-left: -1px;
-top: 662px;
-background: #FFFFFF;  
-}
-.bla4{
-position: absolute;
-width: 288px;
-height: 18px;
-left: -1px;
-top: 680px;
-background: #000000;  
-}
-.whi4 {
-position: absolute;
-width: 288px;
-height: 18px;
-left: -1px;
-top: 698px;
-background: #FFFFFF;  
-}
+
 .tofu {
-position: absolute;
-width: 101px;
-height: 110px;
-left: 1106px;
-top: 35px;
-background: url(http://i68.tinypic.com/2q8aamc.jpg) no-repeat; 
-background-size: contain;
+  position: fixed;
+  width: 101px;
+  height: 110px;
+  right: 120px;
+  top: 60px;
+  background: url(http://i68.tinypic.com/2q8aamc.jpg) no-repeat;
+  background-size: contain;
 }
-</style>
