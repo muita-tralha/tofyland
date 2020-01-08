@@ -147,11 +147,11 @@ height: 2vh;
   background-size: contain;
 }
 .hover-vaca {
-    position: relative;
+     position: fixed;
     height: 400px;
     width: 400px;
     left: 780px;
-    top: 30px;
+    bottom: 0px;
   }
 .bg-blue:hover .hover-vaca{
   background: url(https://i.imgur.com/KmgO40h.png) no-repeat;
