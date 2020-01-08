@@ -146,6 +146,27 @@ height: 2vh;
   background: url(https://i.imgur.com/1XSAJEf.png) no-repeat;
   background-size: contain;
 }
+.hover-vaca {
+    position: relative;
+    height: 400px;
+    width: 400px;
+    left: 780px;
+    top: 50px;
+  }
+.bg-blue:hover .hover-vaca{
+  background: url(https://i.imgur.com/KmgO40h.png) no-repeat;
+  animation: slide-in-bottom 2s linear;
+}
+  @keyframes slide-in-bottom {
+    0% {
+      transform: translateY(1000px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
 div.yellow {
         position: relative;
     }
