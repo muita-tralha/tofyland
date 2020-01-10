@@ -6,19 +6,9 @@ body {
 
 
 .intro {
-  /* altura 100 viewport height unit
-   * vh = viewport height. tipo 10vh é 10% do tamanho da tela, 90vh 90%, etc.
-   * Não é a mesma coisa que '%' sempre. Se você tem um pai de 90px de altura, o filho de 100% vai ter 90px e não a altura da tela
-   * to esquecendo que o escrevo não precisa ser enviado e isso deixa tudo mt dramático e não editável
-   * você está falando com seu computador beep boop
-   */
   height: 100vh;
-  /* diz prx meninx .intro ser ~flexivel~. ou melhor, ter filhos flexiveis */
   display: flex;
-  /* "koe filhos, vcs vao ser centralizados" */
   justify-content: center;
-  /* um pai ~flex~ por padrao trabalha com o eixo horizontal, coisas uma do lado, nao em baixo */
-  /* então é só dizer a direção que você quer: row/column */
   flex-direction: column;
 }
 
@@ -155,7 +145,7 @@ height: 2vh;
   }
 .bg-blue:hover .hover-vaca{
   background: url(https://i.imgur.com/KmgO40h.png) no-repeat;
-  animation: slide-in-bottom 2s linear;
+  animation: slide-in-bottom 1s linear;
 }
   @keyframes slide-in-bottom {
     0% {
